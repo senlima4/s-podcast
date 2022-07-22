@@ -28,3 +28,9 @@ export type Info = {
   image: Image
   items: Item[]
 }
+
+export type CommonExternalResult<T = any> = {
+  success: boolean
+  message?: string
+  data?: T
+}
